@@ -8,7 +8,7 @@ GitHub automatically applies these files to any repository that does **not** def
 
 | File | Purpose |
 |------|---------|
-| [`FUNDING.yml`](FUNDING.yml) | Sponsor button — Ko-fi first, GitHub Sponsors second |
+| [`FUNDING.yml`](FUNDING.yml) | Sponsor button — Ko-fi, GitHub Sponsors, Buy Me a Coffee |
 | [`SECURITY.md`](SECURITY.md) | Default vulnerability reporting policy |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Default contribution guidelines |
 | [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) | Community standards |
