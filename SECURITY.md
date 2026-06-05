@@ -1,43 +1,64 @@
 # Security Policy
 
-## Supported projects
+## Scope
 
-This policy applies to open-source repositories maintained by [Javan Rasokat](https://github.com/JavanXD), including security research tools, training materials, and community utilities.
+This policy applies to open-source repositories maintained by [Javan Rasokat](https://github.com/JavanXD) — security research tools, training materials, workshop apps, and community utilities.
 
-If a repository has its own `SECURITY.md`, that file takes precedence.
+If a repository has its own `SECURITY.md`, **that file takes precedence**.
+
+### Actively maintained (examples)
+
+- [Conference Tracker](https://github.com/JavanXD/ConferenceTracker) — static site; no server-side user data
+- [Raceocat](https://github.com/JavanXD/Raceocat) — security research tooling
+- [ya-pihole-list](https://github.com/JavanXD/ya-pihole-list) — blocklist automation
+- [LasVegasNightlifeApp-Workshop](https://github.com/JavanXD/LasVegasNightlifeApp-Workshop) — DEF CON workshop materials
+- [HoneyPi](https://github.com/Honey-Pi/HoneyPi) — IoT firmware and installer (see also [Honey-Pi org](https://github.com/Honey-Pi))
 
 ## Reporting a vulnerability
 
-**Please do not open public GitHub issues for security vulnerabilities.**
+**Do not open public GitHub issues for security vulnerabilities.**
 
-Preferred channels:
+### Preferred: private disclosure
 
-1. **GitHub Security Advisories** — Use [Report a vulnerability](https://github.com/JavanXD/REPO_NAME/security/advisories/new) on the affected repository (private disclosure).
-2. **Direct contact** — Reach out via [about.javan.de](https://about.javan.de) if private advisory reporting is unavailable.
+1. Open the **affected repository** on GitHub.
+2. Go to **Security → Advisories → Report a vulnerability**.
+3. Submit a private advisory with reproduction steps and impact.
 
-Include:
+This keeps details confidential until a fix is ready.
 
-- Affected repository and version or commit
-- Steps to reproduce
-- Impact assessment
-- Proof of concept (if available)
+### Fallback
 
-## What to expect
+If private reporting is unavailable on a repository, contact via [about.javan.de](https://about.javan.de).
 
-- **Acknowledgement** within 5 business days
-- **Status update** within 14 business days
-- **Coordinated disclosure** once a fix is available — credit offered unless you prefer anonymity
+For **HoneyPi**-specific issues, you may also use [honeys@honey-pi.de](mailto:honeys@honey-pi.de).
 
-## Scope
+### Please include
 
-Generally in scope:
+- Affected repository, version, or commit SHA
+- Clear steps to reproduce
+- Impact assessment (confidentiality, integrity, availability)
+- Proof of concept, if available
 
-- This repository and other actively maintained projects under [@JavanXD](https://github.com/JavanXD)
+## Response timeline
 
-Generally out of scope:
+| Stage | Target |
+|-------|--------|
+| Acknowledgement | Within 5 business days |
+| Status update | Within 14 business days |
+| Fix & disclosure | Coordinated once a remedy is available |
 
-- Third-party services, dependencies, or hosting infrastructure
-- Social engineering or physical attacks
-- Issues with no security impact (typos, styling, feature requests)
+Credit in advisories or release notes is offered unless you prefer to remain anonymous.
 
-Thank you for helping keep these projects secure.
+## In scope
+
+- Vulnerabilities in code, configuration, or documented deployment paths in maintained repositories
+- Unsafe defaults that could harm users in realistic deployments
+
+## Out of scope
+
+- Third-party hosting, CDN, or dependency infrastructure outside this codebase
+- Social engineering, physical attacks, or denial-of-service without a code fix
+- Issues with no realistic security impact (typos, styling, feature requests)
+- Vulnerabilities in abandoned or archived repositories (report anyway — response may be limited)
+
+Thank you for responsible disclosure.

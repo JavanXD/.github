@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/JavanXD/.github/blob/main/SECURITY.md
+    about: Report security issues privately. Do not open a public issue.
+  - name: Conference Tracker data updates
+    url: https://github.com/JavanXD/ConferenceTracker/blob/main/CONTRIBUTING.md
+    about: Guidelines for adding or updating conference catalog entries.
+  - name: about.javan.de
+    url: https://about.javan.de
+    about: Talks, trainings, publications, and contact.
